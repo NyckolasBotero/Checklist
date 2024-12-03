@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+
+        .main-content {
+            margin: 20px auto;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .page-title {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .block label {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .block-checkbox {
+            margin-right: 10px;
+        }
+
+        .block span {
+            flex-grow: 1;
+            padding: 5px;
+            outline: none;
+            border: none;
+            background: transparent;
+            font-size: 16px;
+        }
+
+        .add-block {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-block:hover {
+            background: #0056b3;
+        }
+
+        .realized-content {
+            margin-top: 20px;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .realized-content h3 {
+            margin-top: 0;
+        }
+
+        .realized-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .realized-content li {
+            padding: 8px 10px;
+            margin-bottom: 5px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="content">
+            <div class="block">
+                <label>
+                
+                    <h2>Checklist Afazeres</h2>
+
+                </label>
+            </div>
+            <button class="add-block">+ Adicionar Item</button>
+            
+        </div>
+        <div class="realized-content">
+            <h3>Realizados</h3>
+            <ul id="realized-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
